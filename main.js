@@ -69,16 +69,19 @@ function watchMouseevent (){
     var index = $(e.currentTarget).index()
     $buttons.removeClass('active')
     $buttons.eq(index).addClass('active')
+    
   })
   var a = 0;
 var a;
 $(window).on('scroll',function(){   
   $('#bottomBar').addClass('stiky')
+  $('#bottomBar > li').addClass('highlight')
   if(a){
     window.clearTimeout(a)
   }
   a = setTimeout(function(){
     $('#bottomBar').removeClass('stiky')
+    $('#bottomBar > li').removeClass('highlight')
   },800)
 
 
