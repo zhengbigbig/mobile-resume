@@ -99,7 +99,7 @@ li{list-style: none;}
 }
 .aboutme{
     width:100%;
-    height:90vh;
+    /* height:90vh; */
     background:#FBFBFB;
     text-align: center;
     position: relative;
@@ -130,8 +130,9 @@ li{list-style: none;}
 .aboutme > h2{
     font-weight: normal;
     position: absolute;
-    top:25vh;
-    left:38%;
+    top:23vh;
+    left:39%;
+    margin-top:1rem;
     
 }
 .aboutme > .line{
@@ -142,7 +143,7 @@ li{list-style: none;}
     background: #C0B199;
     position: absolute;
     top: 30vh;
-    left: 41%;
+    left: 42%;
 }
 .aboutme > p{
     font-size:12px;
@@ -281,7 +282,7 @@ li{list-style: none;}
 }
 .technology{
     width:100%;
-    height:90vh;
+    /* height:90vh; */
     background:#FBFBFB;
     text-align: center;
 }
@@ -336,9 +337,10 @@ li{list-style: none;}
 }
 .contact{
     width:100%;
-    height:100vh;
+    /* height:100vh; */
     background:#FBFBFB;
     text-align: center;
+    margin-bottom: 20vh;
 }
 .contact > .line2{
     display: inline-block;
@@ -358,6 +360,7 @@ li{list-style: none;}
     margin-top:1vh;
 }
 .contact > a{
+    margin-bottom: 30vh;
     position: relative;
     color:#FBFBFB;
     font-weight: bold;
@@ -386,6 +389,17 @@ li{list-style: none;}
     .aboutme > dl{
         font-size:10px;
     }
+    .aboutme > h2{
+        font-weight: normal;
+        position: absolute;
+        top:22vh;
+        left:37%;
+        margin-top:1rem;
+        
+    }
+    .portfolio > .portfolio1 > .portIntroduce > .a1{
+        margin-right:1rem;
+    }
     .portfolio > .line2{
         margin-top:8vh;
     }
@@ -407,19 +421,23 @@ li{list-style: none;}
         height:120vh;
     }
 }
-@media (min-width: 350px) and (max-width: 380px){
+@media (min-width: 350px) and (max-width: 374px){
     .aboutme > a{
         font-size:1em;
         margin-top:1vh;
     }
     .aboutme > .line{
-        left:43%;
+        left:42%;
+        margin-top:15px;
     }
     .aboutme > h2{
-        left:40%;   
+        left:38%;   
     }
     .aboutme > dl{
         padding:10px;
+    }
+    .portfolio > .portfolio1 > .portIntroduce > .a1{
+        margin-right:2px;
     }
     .technology > .line2{
         margin-top:6vh;
@@ -442,24 +460,98 @@ li{list-style: none;}
         margin-bottom: 2vh;
     }
 }
-
+@media (min-width: 375px) and (max-width: 380px){
+    .aboutme > a{
+        font-size:1em;
+        margin-top:1vh;
+    }
+    .aboutme > .me{
+        width:30vw;
+        height:30vw;
+        border-radius: 50%;
+        overflow: hidden;
+        position: relative;
+        left:35vw;
+        bottom:8vh;
+    }
+    .aboutme > .line{
+        display: inline-block;
+        width: 3em;
+        height: 3px;
+        border-radius: 3px;
+        background: #C0B199;
+        position: absolute;
+        top: 27vh;
+        left: 43.5%;
+    }
+    .aboutme > h2{
+        font-weight: normal;
+        position: absolute;
+        top:20vh;
+        left:40%;
+        margin-top:1rem;
+    }
+    .aboutme > .p1{
+        margin-top:1em;
+        margin-bottom: 0.7em;
+    }
+    .aboutme > dl{
+        padding:10px;
+        margin-bottom:2em;
+    }
+    .aboutme > a{
+        margin-top:1em;
+    }
+    .portfolio > .portfolio1 > .portIntroduce > .a1{
+        margin-right:2px;
+    }
+    .technology > .line2{
+        margin-top:6vh;
+    }
+    .technology > h1{   
+        padding-top:3vh;
+        margin-bottom: 4vh;
+    }
+    .technology > .skills {
+        margin-top: 3em;
+    }
+    .technology > .skills > ol > li{
+        font-size:12px;
+    }
+    .technology > .tags > ul > li{
+        font-size:12px;
+    }
+    .contact > .line2{
+        margin-top:2vh;
+    }
+    .contact{
+        margin-top:11vh;
+    }
+    .contact > h1{
+        padding-top:2vh;
+        margin-bottom: 2vh;
+    }
+}
 @media (min-width:500px) and (max-width: 1024px){
     .aboutme{
         font-size:22px;
+        text-align: center;
     }
     .aboutme > .me{
         width:26vw;
-        height:26vw;
+        height: 26vw;
         left:37vw;
     }
     .aboutme > .me > img{
-        width:260px;
+        width:220px;
     }
     .aboutme > h2{
-        left:43vw; 
+        display: block;
+        left:46vw;
+        top:30vh;
     }
     .aboutme > .line{
-        top: 31vh;
+        top: 40vh;
         left:45vw;
     }
     .aboutme > p{
@@ -467,6 +559,7 @@ li{list-style: none;}
     }
     .aboutme > .p1{
        font-size: 28px;
+       margin-top:50px;
     }
     .aboutme > .p2{
        font-size:24px;
@@ -490,6 +583,9 @@ li{list-style: none;}
     .portfolio > h1{
         font-size:32px;
     }
+    .contact{
+        padding-bottom: 100px;
+    }
 }
 @media (min-width: 1025px){
     .aboutme > .me{
@@ -499,12 +595,21 @@ li{list-style: none;}
         width:180px;
     }
     .aboutme > h2{
-        left:47vw; 
+        left:47vw;
+        margin-bottom:20px;
     }
     .aboutme > .line{
-        top: 31vh;
+        top: 34vh;
         left:48vw;
+        margin-bottom:10px;
     }
+    .aboutme > .p1{
+        font-size: 18px;
+        line-height: 18px;
+        padding-bottom: 10px;
+        margin-top:10px;
+        
+     }
     .portfolio{
         background:#FBFBFB;
         display: block;
@@ -571,6 +676,8 @@ li{list-style: none;}
     }
     .contact > h1{
         margin-bottom: 3vh;
-        margin-top:-2vh;
+    }
+    .contact{
+        margin-bottom: 100px;
     }
 }
