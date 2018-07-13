@@ -1,0 +1,387 @@
+@media screen and (max-width: 500px){
+    *{padding:0;margin:0;box-sizing: border-box;}
+    /**{color:white;}*/
+    a{text-decoration: none;}
+    li{list-style: none;}
+    .clearfix::after{
+        content:'';
+        display: block;
+        clear: both;
+    }
+    .main{
+        overflow: auto;
+        transition:all 0.5s;
+    }
+    .homepage{
+        width:100vw;
+        height:90vh;
+        display: flex;
+        flex-direction: column;
+        position:relative;
+ 
+    }
+    .homepage > .homepicture {
+        width:100%;
+        height:100%;
+        background-image: url(./image/me.jpg);
+        background-position: center center;
+        background-size: cover;
+    }
+    .homepage > .homepicture > .mask {
+        width:100%;
+        height:100%;
+        background-color: rgba(68, 67, 67, 0.9);
+    }
+    .homepage > .logo{
+        position:absolute;
+        top:30px;
+        left:20px;
+        color:#FBFBFB;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .homepage > h1{
+        color:#A8926F;
+        position:absolute;
+        left:20px;
+        bottom: 120px;
+        font-size: 30px;
+    }
+    .homepage > h2{
+        position:absolute;
+        color:#FBFBFB;
+        left:20px;
+        bottom: 80px;
+        font-family: "Times New Roman", Times, serif;
+    }
+    .homepage > .tools{
+        display: flex;
+        justify-content: flex-start;
+        position:absolute;
+        left:20px;
+        bottom: 30px;
+    }
+    .homepage > .tools > a{
+        width:2em;
+        height:2em;
+        margin-right:20px;
+    }
+    .bottomBar{
+        width:100%;
+        height:10vh;
+        background:rgba(142,117,75);
+        position:fixed;
+        bottom:0;
+        left:0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    }
+    .bottomBar.stiky{
+        background:rgba(142,117,75,0.1);
+    }
+    .bottomBar > li{
+        
+        text-align: center
+    }
+    .bottomBar > li > span{
+        display: block;
+        text-align:center;
+        font-size: 12px;
+        line-height: 12px;
+        color:#FBFBFB;
+    }
+    .bottomBar > li.highlight > svg{
+        fill:black;
+    }
+    .bottomBar > li.highlight > span{
+        color:black;
+    }
+    .aboutme{
+        width:100%;
+        height:90vh;
+        background:#FBFBFB;
+        text-align: center;
+        position: relative;
+    }
+    .aboutme > .topBar{
+        width:100%;
+        height:15vh;
+        background:#D3D2D0;
+    }
+    #particles-js{
+        width: 100%;
+        height: 100%;
+        background-color: #D3D2D0;
+        background-image: url('');
+        background-size: cover;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+    .aboutme > .me{
+        width:20vh;
+        height:20vh;
+        border-radius: 50%;
+        overflow: hidden;
+        position: relative;
+        left:30%;
+        bottom: 10vh;
+    }
+    .aboutme > h2{
+        font-weight: normal;
+        position: absolute;
+        top:25vh;
+        left:38%;
+        
+    }
+    .aboutme > .line{
+        display: inline-block;
+        width: 3em;
+        height: 3px;
+        border-radius: 3px;
+        background: #C0B199;
+        position: absolute;
+        top: 30vh;
+        left: 41%;
+    }
+    .aboutme > p{
+        font-size:12px;
+        padding-bottom:6px;
+        margin-left:3px;
+        margin-right:3px;
+    }
+    .aboutme > .p1{
+       font-size: 18px;
+       line-height: 18px;
+       padding-bottom: 10px;
+       margin-top:-10px;
+       
+    }
+    .aboutme > .p2{
+       color:rgba(112, 110, 110, 0.7);
+    }
+    .aboutme > dl{
+        display: block;
+        width: 90%;
+        margin: 16px auto 14px auto;
+        background: rgba(264, 230, 230, 0.45);
+        box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 13px 0px;
+    }
+    .aboutme > dl > dt{
+        box-sizing: border-box;
+        float: left;
+        width: 30%;
+        margin-left: 10%;
+        font-weight: bold;
+        padding-bottom: 2px;
+    }
+
+    .aboutme > dl > dd{
+        float: right;
+        width: 30%;
+        margin-right: 20%;
+        padding-bottom: 2px;
+    }
+    .aboutme > a{
+        display: inline-block;
+        padding: 5px;
+        border:1px solid #C0B199;
+        border-radius: 5px;
+        color:#A8926F;
+        font-size:1.5em;
+        margin-top:10px;
+        margin-bottom: 10px;
+    }
+    .aboutme > a > svg{
+        width:1.2em; height:1.2em;
+    }
+    .aboutme > a.hover{
+        box-shadow: 0px 0px 19px 3px rgba(192,177,153,1);
+    }
+    .aboutme > a::hover{
+        box-shadow: 0px 0px 19px 3px rgba(192,177,153,1);
+    }
+    .portfolio{
+        width:100%;
+        background:#FBFBFB;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    
+    }
+    .portfolio > h1{
+        font-family:YaHei,sans-serif;
+        font-weight: normal;
+        padding-top:5vh;
+        margin-bottom: 5vh;
+    }
+    .portfolio > .line2{
+        width: 60%;
+        height: 2px;
+        border-radius: 2px;
+        background: #C0B199;
+        margin-top:10vh;
+    }
+    .portfolio > .portfolio1{
+        width:94%;
+        height:80vh;
+        border:1px solid red;
+        margin-bottom:8vh;
+    }
+    .portfolio > .portfolio1 > .portBar{
+        width:100%;
+        height:10%;
+        border:1px solid gold;
+    }
+    .portfolio > .portfolio1 > .portPicture{
+        width:100%;
+        height:60%;
+        border:1px solid black;
+    }
+    .portfolio > .portfolio1 > .portIntroduce{
+        width:100%;
+        height:30%;
+        position: relative;
+    }
+    .portfolio > .portfolio1 > .portIntroduce>.line3{
+        display: inline-block;
+        width: 60%;
+        height: 1px;
+        border-radius: 2px;
+        background: rgba(192,177,153,0.8);
+        position: absolute;
+        bottom: 8vh;
+        margin: 0 20%;
+    }
+    .portfolio > .portfolio1 > .portIntroduce > .a1{
+        background: linear-gradient(to bottom, rgba(104,83,55,1) 0%,rgba(168,146,111,1) 24%,rgba(192,177,153,1) 48%,rgba(192,177,153,1) 48%,rgba(192,177,153,1) 82%,rgba(168,146,111,1) 100%);
+        box-shadow: 2px 2px 3px 0px rgba(104,83,55,1);
+        color:#FBFBFB;
+        padding:8px;
+        border-radius:5px;
+        font-size:16px;
+        line-height: 16px;
+        position: absolute;
+        height: 2rem;
+        right: 23vw;
+        bottom: 2vw;
+    }
+    .portfolio > .portfolio1 > .portIntroduce > .a2{
+        background: linear-gradient(to bottom, rgba(104,83,55,1) 0%,rgba(168,146,111,1) 24%,rgba(192,177,153,1) 48%,rgba(192,177,153,1) 48%,rgba(192,177,153,1) 82%,rgba(168,146,111,1) 100%);
+        box-shadow: 2px 2px 3px 0px rgba(104,83,55,1);
+        color:#FBFBFB;
+        padding:8px;
+        border-radius:5px;
+        font-size:16px;
+        line-height: 16px;
+        position: absolute;
+        height: 2rem;   
+        right: 2vw;
+        bottom: 2vw;
+    }
+    .technology{
+        width:100%;
+        height:90vh;
+        background:#FBFBFB;
+        text-align: center;
+    }
+    .technology > .line2{
+        display: inline-block;
+        width: 60%;
+        height: 2px;
+        border-radius: 2px;
+        background: #C0B199;
+        margin-top:5vh;
+    }
+    .technology > h1{
+        font-family:YaHei,sans-serif;
+        font-weight: normal;
+        padding-top:5vh;
+        margin-bottom: 5vh;
+    }
+    .technology > .tags{
+        width:100%;
+        height:30%;
+        margin-bottom: 2vh;
+    }
+    .technology > .tags > ul{
+        display: flex;
+        justify-content: center;
+        margin-top:1vh;
+    }
+    .technology > .tags > ul > li{
+        border:1px solid black;
+        background:#685337;
+        color:#FBFBFB;
+        padding:2px;
+        margin-right:10px;
+        margin-bottom: 5px;
+        box-shadow: rgb(168, 146, 111) 4px 5px 2px 1px;
+    }
+    .technology > .skills{
+        font-size:12px;
+        font-family: YaHei,sans-serif;
+    }
+    .technology > .skills > ol{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+    .technology > .skills > ol > li{
+        list-style:circle;
+        margin-bottom: 8px;
+        margin-left:3em;
+        margin-right:1em;
+    }
+    .contact{
+        width:100%;
+        height:100vh;
+        background:#FBFBFB;
+        text-align: center;
+    }
+    .contact > .line2{
+        display: inline-block;
+        width: 60%;
+        height: 2px;
+        border-radius: 2px;
+        background: #C0B199;
+        margin-top:5vh;
+    }
+    .contact > h1{
+        font-family:YaHei,sans-serif;
+        font-weight: normal;
+        padding-top:5vh;
+        margin-bottom: 5vh;
+    }
+    .contact > .weixin{
+        margin-top:1vh;
+    }
+    .contact > .qq{
+    }
+    .contact > a{
+        position: relative;
+        color:#FBFBFB;
+        font-weight: bold;
+        font-family:YaHei,sans-serif;
+        padding:10px;
+        border-radius: 5px;
+        border:1px solid #59C109;
+        box-shadow: rgb(104, 165, 0) 6px 6px 16px 0px;
+        background: linear-gradient(to bottom, rgba(180,227,145,1) 0%,rgba(97,196,25,1) 50%,rgba(180,227,145,1) 100%);
+    }
+    .contact > a > img{
+        border:1px solid red;
+        position: absolute;
+        right:1px;
+        display: inline-block;
+        width:50px;
+        padding:5px;
+    } 
+    .active{
+        transform: scale(1.2);
+    }
+
+}
