@@ -432,6 +432,9 @@ li{list-style: none;}
         padding-top:2vh;
         margin-bottom: 2vh;
     }
+    .portfolio > .portfolio1 > .portIntroduce > .a1{
+        right:25vw;
+    }
 }
 
 @media (min-width:500px) and (max-width: 1024px){
