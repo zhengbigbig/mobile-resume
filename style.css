@@ -412,6 +412,15 @@ li{list-style: none;}
         font-size:1em;
         margin-top:1vh;
     }
+    .aboutme > .line{
+        left:43%;
+    }
+    .aboutme > h2{
+        left:40%;   
+    }
+    .aboutme > dl{
+        padding:10px;
+    }
     .technology > .line2{
         margin-top:6vh;
     }
