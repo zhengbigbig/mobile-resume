@@ -1,9 +1,9 @@
 let $buttons = $('#bottomBar > li')
 let $tags = $('.main > section')
 function watchTouchevent(){
-  // $([document.documentElement, document.body]).animate({
-  //   scrollTop: $tags.eq(0).offset().top
-  // }, 1000)
+  $([document.documentElement, document.body]).animate({
+    scrollTop: $tags.eq(0).offset().top
+  }, 1000)
   $buttons.on('touchstart',function(e){
      var index = $(e.currentTarget).index()
      $buttons.removeClass('active')
@@ -14,7 +14,7 @@ function watchTouchevent(){
   }, 1000)
   })
   
-  $($tags).on('touchmove',function(e){
+  $($tags).on('touchstart',function(e){
     var index = $(e.currentTarget).index()
     $buttons.removeClass('active')
     $buttons.eq(index).addClass('active')
@@ -35,9 +35,9 @@ function watchTouchevent(){
   })
 }
 function watchMouseevent (){
-  // $([document.documentElement, document.body]).animate({
-  //   scrollTop: $tags.eq(0).offset().top
-  // }, 1000)
+  $([document.documentElement, document.body]).animate({
+    scrollTop: $tags.eq(0).offset().top
+  }, 1000)
   $buttons.on('click',function(e){
      var index = $(e.currentTarget).index()
      $buttons.removeClass('active')
