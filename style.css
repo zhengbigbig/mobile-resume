@@ -167,17 +167,19 @@ li{list-style: none;}
     margin: 16px auto 14px auto;
     background: rgba(264, 230, 230, 0.45);
     box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 13px 0px;
-    border:1px solid red;
+    border:1px solid rgb(238, 186, 186);
 }
 .aboutme > dl > dt{
     box-sizing: border-box;
-    float: left;
+    float:left;
     width: 30%;
+    line-height: 30px;
+    height: 30px;
     margin-left: 10%;
     font-weight: bold;
     padding-bottom: 2px;
-    border:1px solid red;
-    background:black;
+    text-align:justify; 
+    
 }
 
 .aboutme > dl > dd{
@@ -185,7 +187,9 @@ li{list-style: none;}
     width: 30%;
     margin-right: 20%;
     padding-bottom: 2px;
-    border:1px solid red;
+
+    line-height: 30px;
+    height: 30px;
 }
 .aboutme > a{
     display: inline-block;
@@ -551,11 +555,11 @@ li{list-style: none;}
     }
     .aboutme > h2{
         display: block;
-        left:46vw;
-        top:30vh;
+        left:43vw;
+        top:260px;
     }
     .aboutme > .line{
-        top: 40vh;
+        top: 320px;
         left:45vw;
     }
     .aboutme > p{
@@ -600,10 +604,10 @@ li{list-style: none;}
     }
     .aboutme > h2{
         left:47vw;
-        margin-bottom:20px;
+        margin-bottom:10px;
     }
     .aboutme > .line{
-        top: 34vh;
+        top: 32vh;
         left:48vw;
         margin-bottom:10px;
     }

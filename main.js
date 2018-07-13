@@ -20,13 +20,32 @@ function watchTouchevent(){
     $buttons.eq(index).addClass('active')
     $('#bottomBar').addClass('stiky') 
     $('#bottomBar > li').addClass('highlight')
-  })
-  $($tags).on('touchend',function(){
-    setTimeout(()=>{
+    if(a){
+      window.clearTimeout(a)
+      }
+      a = setTimeout(function(){
       $('#bottomBar').removeClass('stiky')
       $('#bottomBar > li').removeClass('highlight')
-    },3000)  
+      },1500)
   })
+  var a
+  $($tags).on('touchmove',function(){
+    $('#bottomBar').addClass('stiky')
+    $('#bottomBar > li').addClass('highlight')
+    if(a){
+    window.clearTimeout(a)
+    }
+    a = setTimeout(function(){
+    $('#bottomBar').removeClass('stiky')
+    $('#bottomBar > li').removeClass('highlight')
+    },800)
+  })
+  // $($tags).on('touchend',function(){
+  //   setTimeout(()=>{
+  //     $('#bottomBar').removeClass('stiky')
+  //     $('#bottomBar > li').removeClass('highlight')
+  //   },2000)  
+  // })
   $('#hoverme').on('touchstart',function (){
     $('#hoverme').addClass('hover') 
   })
@@ -51,12 +70,25 @@ function watchMouseevent (){
     $buttons.removeClass('active')
     $buttons.eq(index).addClass('active')
   })
-  $('.main').on('scroll',function(e){
-    console.log(1)
-    console.log(e.scrollY)
-  })
+  var a = 0;
+var a;
+$(window).on('scroll',function(){   
+  $('#bottomBar').addClass('stiky')
+  if(a){
+    window.clearTimeout(a)
+  }
+  a = setTimeout(function(){
+    $('#bottomBar').removeClass('stiky')
+  },800)
 
+
+})
+ 
+ 
+  
+  
 }
+
 
 if(document.ontouchstart !== undefined){
   watchTouchevent()
