@@ -5,6 +5,15 @@ function watchTouchevent(){
     scrollTop: $tags.eq(0).offset().top
   }, 1000)
   $buttons.on('touchstart',function(e){
+     $('#bottomBar').addClass('stiky') 
+     $('#bottomBar > li').addClass('highlight')
+     if(a){
+      window.clearTimeout(a)
+      }
+      a = setTimeout(function(){
+      $('#bottomBar').removeClass('stiky')
+      $('#bottomBar > li').removeClass('highlight')
+      },4000)
      var index = $(e.currentTarget).index()
      $buttons.removeClass('active')
      $buttons.eq(index).addClass('active')
