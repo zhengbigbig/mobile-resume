@@ -26,7 +26,7 @@ function watchTouchevent(){
       a = setTimeout(function(){
       $('#bottomBar').removeClass('stiky')
       $('#bottomBar > li').removeClass('highlight')
-      },1500)
+      },3000)
   })
   var a
   $($tags).on('touchmove',function(){
@@ -38,7 +38,7 @@ function watchTouchevent(){
     a = setTimeout(function(){
     $('#bottomBar').removeClass('stiky')
     $('#bottomBar > li').removeClass('highlight')
-    },800)
+    },2000)
   })
   // $($tags).on('touchend',function(){
   //   setTimeout(()=>{
